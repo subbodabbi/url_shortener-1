@@ -1,0 +1,8 @@
+<%= link_to "Create New URL", new_url_path %>
+
+<% @urls.each do |url| %>
+  <tr>  
+    <td><%= url.long_url %></td>
+    <td><%= url.short_url %></td>
+  </tr>
+<% end %>

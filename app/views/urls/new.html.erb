@@ -1,0 +1,15 @@
+
+<%= form_for @url do |form| %>
+
+  <div class="text-field">
+    <%= form.label :long_url %>
+    <%= form.text_field :long_url %>
+  </div>
+
+  <div class="submit-field">
+    <%= form.submit %>
+  </div>
+
+<% end %>
+
+<%= @url.short_url %>
